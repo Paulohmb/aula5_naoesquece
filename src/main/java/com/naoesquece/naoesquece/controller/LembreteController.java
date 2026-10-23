@@ -28,7 +28,7 @@ public class LembreteController {
 
     @GetMapping
     public ResponseEntity<List<LembreteResponseDto>> listar() {
-        return ResponseEntity.ok(lembreteService.ListarTodos());
+        return ResponseEntity.ok(lembreteService.listarTodos());
     }
 
     @GetMapping("/{id}")
